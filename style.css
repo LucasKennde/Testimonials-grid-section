@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    
+    background-color: #ECF2F8;
+    gap: 30px;
+    
+    padding: 24px;
+}
+
+.container{
+    width: auto;
+
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .item{
+        
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        color: #fff;
+
+        box-shadow: 40px 60px 50px -47px #48556A3F;
+        border-radius: 10px;
+        h1{
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+        }
+        h2{
+            font-size: 13px;
+            font-weight: 500;
+        }
+        p{
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 18px;
+            opacity: 70%;
+        }
+    }
+    .i1{
+        background: #733FC8;
+        width: 540px;
+    }
+    .i2{
+        background: #48556A;
+        width: 255px;
+
+    }
+    .color-with{
+        background-color: #fff;
+        color: #48556A;
+    }
+    .color-black{
+        background-color: #1c1c1c;
+    }
+    .profile-content{
+
+        gap: 17px;
+        display: flex;
+
+        img{
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width:430px) {
+    .wrapper, .content{
+        flex-direction: column;
+    }
+    
+    .item{
+        width: 100% !important;
+        max-width: 100%;
+    }
+}
